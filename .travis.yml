@@ -9,7 +9,7 @@ before_script:
   - ./make_unix.sh
   - cd ..
 # install something
-  - sudo apt-get install mysql-devel
+  - sudo apt-get install libmysqlclient-dev
 
 script:
   - bam/bam -s compile.lua
