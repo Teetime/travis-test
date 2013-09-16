@@ -8,6 +8,8 @@ before_script:
   - cd bam
   - ./make_unix.sh
   - cd ..
+# install something
+  - sudo apt-get install mysql-devel
 
 script:
-  - bam/bam
+  - bam/bam -s compile.lua
